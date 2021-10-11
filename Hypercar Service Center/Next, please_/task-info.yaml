@@ -582,6 +582,12 @@ files:
 - name: hypercar/tickets/templates/next.html
   visible: true
   learner_created: true
+- name: hypercar/tickets/static/css/styles.css
+  visible: true
+  learner_created: true
+- name: hypercar/tickets/templates/base.html
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/85/stages/474/implement#comment
 status: Solved
 feedback:

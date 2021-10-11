@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Hypercar Servise{% endblock %}</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+<h1 id="header">Hypercar Servise </h1>
+<hr>
+<nav id="navbar">
+<ul class="navbar">
+    <li><a href="/welcome">Main Page</a></li>
+    <li><a href="/menu">Get ticket menu</a></li>
+    <li><a href="/processing">Processing queues</a></li>
+    <li><a href="/next">Next client</a></li>
+</ul>
+</nav>
+{% block content %} {% endblock %}
+<footer>
+    <p>Hypercar © Since 2021</p>
+</footer>
+</body>
+</html>

@@ -20,6 +20,7 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('welcome/', WelcomeView.as_view()),
+    path('', RedirectView.as_view(url='/welcome')),
     path('menu/', MenuView.as_view()),
     path('get_ticket/<str:ticket>/', TicketView.as_view()),
     path('processing', ProcessView.as_view()),

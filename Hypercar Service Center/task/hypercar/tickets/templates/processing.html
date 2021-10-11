@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %} Processing {% endblock %}
+{% block content %}
 <div>Change oil queue: {{ counts.change_oil }}</div>
 <div>Inflate tires queue: {{ counts.inflate_tires }}</div>
 <div>Get diagnostic queue: {{ counts.diagnostic }}</div>
@@ -13,5 +9,4 @@
   <button type="submit">Process next</button>
 </form>
 
-</body>
-</html>
+{% endblock %}
