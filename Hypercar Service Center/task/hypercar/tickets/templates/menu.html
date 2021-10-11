@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+{% for s in menu_items %}
+    <a target="_blank" href="/get_ticket/{{ s.link }}">{{ s.title }}</a>
+{% endfor %}
+</body>
+</html>
